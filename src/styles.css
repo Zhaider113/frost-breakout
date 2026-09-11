@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap');
+
+*{box-sizing:border-box}html,body,#root{margin:0;min-height:100%;background:#020a11;color:#e9fbff}
+body{font-family:Rajdhani,Arial,sans-serif;overflow-x:hidden}
+button{font:inherit;color:inherit}
+.app{min-height:100vh;position:relative;overflow:hidden;background:
+radial-gradient(circle at 50% 0%,rgba(65,207,255,.11),transparent 34rem),
+linear-gradient(145deg,#061521 0%,#020a11 70%);padding:22px 28px 16px}
+.aurora{position:absolute;filter:blur(55px);opacity:.25;pointer-events:none;border-radius:50%}
+.aurora-a{width:380px;height:180px;background:#18bde7;top:-100px;left:12%}
+.aurora-b{width:300px;height:180px;background:#5bdcff;right:-80px;bottom:20%;opacity:.10}
+.topbar{height:72px;max-width:1280px;margin:auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(150,230,255,.13)}
+.brand{display:flex;align-items:center;gap:12px;min-width:190px}.logo{font-size:32px;text-shadow:0 0 20px #5feaff}.brand b,.brand small{font-family:Orbitron;display:block;letter-spacing:3px}.brand b{font-size:17px}.brand small{font-size:9px;color:#67cfe8;letter-spacing:4px;margin-top:2px}
+.stats{display:flex;gap:36px}.stats div{display:flex;flex-direction:column;gap:1px}.stats span{font-size:10px;letter-spacing:2px;color:#5c94a7}.stats strong{font:700 18px Orbitron;color:#e6fbff}.lives strong{color:#78e7ff;letter-spacing:3px}.lives i{color:#234451;font-style:normal}
+.actions{display:flex;gap:7px;min-width:190px;justify-content:flex-end}.actions button{width:39px;height:35px;border:1px solid rgba(139,231,255,.2);background:rgba(11,39,54,.65);border-radius:8px;cursor:pointer}.actions button:hover{border-color:#65defa;box-shadow:0 0 16px rgba(70,220,255,.2)}
+.game-shell{max-width:1280px;margin:25px auto 0}.canvas-frame{position:relative;width:min(100%,960px);margin:auto;border:1px solid rgba(110,224,250,.28);box-shadow:0 0 45px rgba(36,194,232,.10),inset 0 0 40px rgba(48,182,218,.04);background:#03101a;overflow:hidden}.canvas-frame canvas{display:block;width:100%;height:auto;aspect-ratio:960/620;touch-action:none}
+.hint{text-align:center;color:#4f8394;font-size:12px;letter-spacing:1px;margin-top:13px}.hint span{color:#9defff;border:1px solid rgba(100,220,245,.18);padding:3px 7px;border-radius:4px;background:rgba(20,60,75,.35)}.hint em{font-style:normal;color:#29596a;margin:0 8px}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,rgba(5,30,43,.63),rgba(1,8,14,.91));backdrop-filter:blur(2px)}
+.ice-ring{width:76px;height:76px;border:1px solid rgba(132,235,255,.55);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 30px rgba(84,220,255,.25),inset 0 0 20px rgba(84,220,255,.12);margin-bottom:17px}.ice-ring span{font-size:35px;text-shadow:0 0 20px #6ceaff}
+.kicker{font:600 10px Orbitron;letter-spacing:5px;color:#61d9f5}.overlay h1{font:800 clamp(28px,5vw,52px) Orbitron;margin:8px 0;text-shadow:0 0 24px rgba(105,228,255,.45);letter-spacing:2px}.overlay p{margin:0 0 24px;color:#76a8b7;font-size:15px}
+.start{border:1px solid #65e5ff;background:linear-gradient(180deg,rgba(90,220,250,.20),rgba(40,139,166,.12));padding:13px 23px;border-radius:8px;cursor:pointer;font:700 12px Orbitron;letter-spacing:2px;box-shadow:0 0 22px rgba(72,220,255,.15)}.start span{margin-left:18px}.start:hover{background:rgba(82,220,250,.28);box-shadow:0 0 32px rgba(72,220,255,.28);transform:translateY(-1px)}
+footer{max-width:1280px;margin:23px auto 0;padding-top:13px;border-top:1px solid rgba(120,210,235,.08);display:flex;justify-content:space-between;color:#315d6b;font:10px Orbitron;letter-spacing:1.5px}
+footer span:first-child{color:#4c91a2}
+@media(max-width:800px){.app{padding:10px 10px 14px}.topbar{height:auto;padding:8px 0 12px;flex-wrap:wrap;gap:10px}.brand{min-width:auto}.stats{order:3;width:100%;justify-content:space-between;gap:10px}.stats div:nth-child(3){display:none}.stats strong{font-size:14px}.actions{min-width:auto}.actions button{width:34px}.game-shell{margin-top:12px}.hint{font-size:10px}.hint em{margin:0 3px}footer{font-size:8px;gap:10px}footer span:nth-child(2){display:none}.overlay p{padding:0 25px}.ice-ring{width:60px;height:60px}.ice-ring span{font-size:27px}}
+@media(max-width:460px){.brand b{font-size:13px}.brand small{font-size:7px}.stats span{font-size:8px}.stats strong{font-size:11px}.lives strong{letter-spacing:1px}.overlay h1{font-size:24px}.overlay p{font-size:12px}.start{padding:11px 15px;font-size:10px}}
